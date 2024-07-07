@@ -1,0 +1,114 @@
+/* Colours!
+#FFC932 - Dark orange
+#4D4D4E - Dark Grey
+#FFF - White
+#FEEA88 - Piss yellow
+#BBBBBD - Light grey
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+body > * {
+    width: 100vw;
+}
+
+/* Nav Bar */
+
+.nav {
+    padding: 16px 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+    position: absolute;
+    background-color: #4D4D4E;
+    color: white;
+    margin: 0;
+}
+
+.logo {
+    height: 10vh;
+}
+
+.title {
+    align-items: center;
+    display: flex;
+    gap: 16px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 16px;
+}
+
+li {
+    transition: all .2s;
+    cursor: pointer;
+}
+
+li:hover {
+    color: #FFC932;
+    transition: all .2s;
+}
+
+/* Header */
+
+.header {
+    padding: 48px 10vw;
+    margin-top: 10vh;
+    display: flex;
+    background-color: #4D4D4E;
+    color: white;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header-text p {
+    width: 50%;
+}
+
+.header img {
+    width: 75%;
+}
+
+.header-text h1 {
+    font-size: 48px;
+}
+
+.header-text p {
+    font-size: 24px;
+    color: #ccc;
+}
+
+.header-text button {
+    padding: 12px;
+    border: 2px solid #FEEA88;
+    border-radius: 12px;
+    background-color: #FFC932;
+    color: #4D4D4E;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.header button:hover {
+    background-color: #fcd770;
+    transition: all .2s;
+}
