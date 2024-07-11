@@ -18,6 +18,7 @@ body {
     flex-direction: column;
     width: 100%;
     background-color: #4D4D4E;
+    align-items: stretch;
 }
 
 body > * {
@@ -231,5 +232,29 @@ li:hover {
     background-color: #4D4D4E;
     color: #FFC932;
     cursor: pointer;
+    transition: all .2s;
+}
+
+/* Footer */
+
+.footer {
+    height: 10vh;
+    background-color: #4D4D4E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 4px;
+    padding: 20px 10vw;
+}
+
+.footer a {
+    color: #FFC932;
+    transition: all .2s;
+}
+
+.footer a:hover {
+    color: #FEEA88;
     transition: all .2s;
 }
