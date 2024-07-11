@@ -10,6 +10,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Monaco, 'Timess New Roman';
 }
 
 body {
@@ -21,6 +22,10 @@ body {
 
 body > * {
     width: 100vw;
+}
+
+h1, h2 {
+    font-family: 'Times New Roman';
 }
 
 /* Nav Bar */
@@ -51,7 +56,7 @@ ul {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-    gap: 16px;
+    gap: 32px;
 }
 
 li {
@@ -96,13 +101,13 @@ li:hover {
 }
 
 .header-text p {
-    font-size: 24px;
+    font-size: 18px;
     color: #ccc;
 }
 
 .header-text button {
     padding: 12px;
-    border: 2px solid #FEEA88;
+    border: 2px solid #4D4D4E;
     border-radius: 12px;
     background-color: #FFC932;
     color: #4D4D4E;
@@ -151,7 +156,7 @@ li:hover {
 
 .photo p {
     color: #4D4D4E;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 /* Quote box */
@@ -168,7 +173,7 @@ li:hover {
     display: flex;
     justify-content: flex-start;
     width: 80%;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: light;
     font-style: italic;
 
@@ -178,7 +183,53 @@ li:hover {
     display: flex;
     justify-content: flex-end;
     width: 80%;
-    font-size: 18px;
+    font-size: 14px;
     font-style: italic;
 }
 
+/* Sign up section */
+
+.sign-up {
+    padding: 48px 10vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-box {
+    padding: 64px;
+    background-color: #FFC932;
+    border-radius: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    width: 90%;
+}
+
+.sign-up-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sign-up-text p {
+    color: #4D4D4E;
+}
+
+.sign-up-button {
+    background-color: #FFC932;
+    padding: 8px 16px;
+    color: #4D4D4E;
+    border: 2px solid #4D4D4E;
+    border-radius: 12px;
+    transition: all .2s;
+}
+
+.sign-up-button:hover {
+    background-color: #4D4D4E;
+    color: #FFC932;
+    cursor: pointer;
+    transition: all .2s;
+}
